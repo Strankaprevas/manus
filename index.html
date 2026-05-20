@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAKCIA s.r.o. – Autoservis & Pneuservis Prešov</title>
+    <meta name="description" content="Profesionálny autoservis v Prešove. Diagnostika, opravy, pneuservis. 15+ rokov skúseností. Záruka na práce.">
+    <meta name="keywords" content="autoservis, pneuservis, diagnostika, opravy vozidiel, Prešov">
+    <meta name="author" content="TRAKCIA s.r.o.">
+    <meta property="og:title" content="TRAKCIA s.r.o. – Autoservis Prešov">
+    <meta property="og:description" content="Profesionálny autoservis v Prešove. Diagnostika, opravy, pneuservis.">
+    <meta property="og:type" content="business.business">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2316a34a' width='100' height='100'/><text x='50' y='60' font-size='60' font-weight='bold' text-anchor='middle' fill='white'>T</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="#hero" class="logo">
+                    <div class="logo-mark"></div>
+                    <div>
+                        <div class="logo-text">TRAKCIA</div>
+                        <div class="logo-sub">s.r.o. · Autoservis</div>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="#hero">Domov</a>
+                    <a href="#about">O nás</a>
+                    <a href="#services">Služby</a>
+                    <a href="#why-us">Prečo my</a>
+                    <a href="#reviews">Recenzie</a>
+                    <a href="#gallery">Galéria</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+                <a href="tel:+421514525207" class="btn btn-primary">☎ Zavolať</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" onclick="closeMobileMenu()">Domov</a>
+        <a href="#about" onclick="closeMobileMenu()">O nás</a>
+        <a href="#services" onclick="closeMobileMenu()">Služby</a>
+        <a href="#why-us" onclick="closeMobileMenu()">Prečo my</a>
+        <a href="#reviews" onclick="closeMobileMenu()">Recenzie</a>
+        <a href="#gallery" onclick="closeMobileMenu()">Galéria</a>
+        <a href="#contact" onclick="closeMobileMenu()">Kontakt</a>
+        <a href="tel:+421514525207" class="btn btn-primary">☎ Zavolať</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663679410955/kUJBVMAfXMtCaMsHJF5yfr/hero-workshop-N4tnU2m4V98eHyB3x9TZy4.webp" alt="TRAKCIA autoservis dielňa" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-label">
+                    <div class="accent-line"></div>
+                    <span>Prešov · Jilemnického 1</span>
+                </div>
+                <h1 class="hero-title">
+                    Profesionálny<br>
+                    <span class="accent">Autoservis</span><br>
+                    v Prešove
+                </h1>
+                <p class="hero-subtitle">Spoľahlivé opravy, diagnostika a servis vozidiel všetkých značiek. Kvalita, ktorej môžete dôverovať.</p>
+                <div class="hero-ctas">
+                    <a href="tel:+421514525207" class="btn btn-primary">☎ Zavolať teraz</a>
+                    <a href="#contact" class="btn btn-secondary">📅 Objednať servis</a>
+                </div>
+                <div class="hero-badges">
+                    <div class="badge">
+                        <span class="badge-icon">🏆</span>
+                        <span>15+ rokov skúseností</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">⚡</span>
+                        <span>Rýchla diagnostika</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>Záruka na práce</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="scroll-btn" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})">
+            <span>Scroll</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                <polyline points="6 9 10 13 14 9"></polyline>
+            </svg>
+        </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-label">
+                <div class="accent-line"></div>
+                <span>O nás</span>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663679410955/kUJBVMAfXMtCaMsHJF5yfr/about-team-f8eB6mYzC629TLJumzAWqo.webp" alt="Tím TRAKCIA autoservis">
+                    <div class="about-badge">
+                        <div class="badge-value">15+</div>
+                        <div class="badge-label">Rokov v odbore</div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>Váš spoľahlivý<br><span class="accent">partner</span> pre servis</h2>
+                    <p>Spoločnosť <strong>TRAKCIA s.r.o.</strong> pôsobí na trhu autoservisu v Prešove viac ako 15 rokov. Naším cieľom je poskytovať profesionálne a spoľahlivé opravy vozidiel všetkých značiek — od bežnej údržby až po komplexné opravy motorov a elektroniky.</p>
+                    <p>Zakladáme si na <strong>poctivej práci, modernej diagnostike</strong> a otvorenom prístupe k zákazníkovi. Každý zákazník dostane jasné informácie o stave svojho vozidla a reálnu cenovú ponuku — bez prekvapení, bez skrytých poplatkov.</p>
+                    <ul class="highlights">
+                        <li><span class="check">✓</span> Profesionálny prístup ku každému vozidlu</li>
+                        <li><span class="check">✓</span> Moderné diagnostické vybavenie</li>
+                        <li><span class="check">✓</span> Transparentné ceny bez skrytých poplatkov</li>
+                        <li><span class="check">✓</span> Servis všetkých značiek vozidiel</li>
+                        <li><span class="check">✓</span> Rýchle a spoľahlivé opravy</li>
+                        <li><span class="check">✓</span> Individuálny prístup ku každému zákazníkovi</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Kontaktujte nás</a>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-value">15+</div>
+                    <div class="stat-label">Rokov skúseností</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">5000+</div>
+                    <div class="stat-label">Spokojných zákazníkov</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">98%</div>
+                    <div class="stat-label">Spokojnosť zákazníkov</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Certifikovaní technici</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="section-label">
+                        <div class="accent-line"></div>
+                        <span>Naše služby</span>
+                    </div>
+                    <h2>Komplexný servis<br><span class="accent">pre vaše vozidlo</span></h2>
+                </div>
+                <p>Poskytujeme kompletný servis vozidiel — od pravidelnej údržby až po náročné opravy.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card highlight">
+                    <div class="service-icon">💻</div>
+                    <h3>Diagnostika vozidiel</h3>
+                    <p>Moderná počítačová diagnostika chybových kódov a stavu celého vozidla. Rýchle a presné výsledky.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛢️</div>
+                    <h3>Výmena oleja a filtrov</h3>
+                    <p>Pravidelná výmena motorového oleja, vzduchového, olejového a palivového filtra podľa predpisov výrobcu.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛑</div>
+                    <h3>Brzdy a podvozok</h3>
+                    <p>Kontrola, oprava a výmena brzdových platničiek, kotúčov, tlmičov a celého podvozku vozidla.</p>
+                </div>
+                <div class="service-card highlight">
+                    <div class="service-icon">🛞</div>
+                    <h3>Pneuservis</h3>
+                    <p>Prezúvanie, vyvažovanie, oprava defektov a skladovanie pneumatík. Letné aj zimné pneumatiky.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">❄️</div>
+                    <h3>Klimatizácia</h3>
+                    <p>Plnenie, dezinfekcia a servis klimatizácie. Kontrola tesnosti a výmena filtrov kabíny.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Príprava na STK/EK</h3>
+                    <p>Komplexná príprava vozidla na technickú a emisnú kontrolu. Odstraňujeme závady pred STK.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Opravy motorov</h3>
+                    <p>Generálne opravy, výmena rozvodov, hlavy valcov, tesnení a ďalších komponentov motora.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Elektronika vozidiel</h3>
+                    <p>Oprava a programovanie riadiacich jednotiek, opravy elektrickej inštalácie a senzorov.</p>
+                </div>
+                <div class="service-card highlight">
+                    <div class="service-icon">🚗</div>
+                    <h3>Servis všetkých značiek</h3>
+                    <p>Opravujeme vozidlá všetkých európskych, ázijských aj amerických značiek bez obmedzenia.</p>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="#contact" class="btn btn-outline">Nezáväzná konzultácia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <div class="section-label">
+                <div class="accent-line"></div>
+                <span>Prečo my</span>
+            </div>
+            <h2>6 dôvodov, prečo si<br>vybrať <span class="accent">TRAKCIA</span></h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Profesionálny prístup</h3>
+                    <p>Každé vozidlo berieme vážne. Pracujeme dôkladne, poctivo a s plnou zodpovednosťou za každú opravu.</p>
+                </div>
+                <div class="feature">
+                    <h3>Skúsený tím</h3>
+                    <p>Náš tím tvoria certifikovaní technici s dlhoročnou praxou na vozidlách všetkých značiek.</p>
+                </div>
+                <div class="feature">
+                    <h3>Moderná diagnostika</h3>
+                    <p>Využívame najnovšie diagnostické prístroje pre presné a rýchle odhalenie každej závady.</p>
+                </div>
+                <div class="feature">
+                    <h3>Rýchly servis</h3>
+                    <p>Vážime si váš čas. Väčšinu opráv zvládneme v dohodnutom termíne bez zbytočného čakania.</p>
+                </div>
+                <div class="feature">
+                    <h3>Transparentné ceny</h3>
+                    <p>Pred každou opravou dostanete jasnú cenovú ponuku. Žiadne skryté poplatky, žiadne prekvapenia.</p>
+                </div>
+                <div class="feature">
+                    <h3>Individuálny prístup</h3>
+                    <p>Každý zákazník je pre nás dôležitý. Počúvame vaše potreby a hľadáme najlepšie riešenie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-label">
+                <div class="accent-line"></div>
+                <span>Recenzie</span>
+            </div>
+            <h2>Čo hovoria naši<br><span class="accent">zákazníci</span></h2>
+            <div class="reviews-header">
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-value">4.9 / 5.0</span>
+                </div>
+                <p>200+ recenzií</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Výborný servis! Prišiel som s problémom so svetlami, chlapci to diagnostikovali za pol hodinu a opravili ešte v ten deň. Cena bola fér, presne ako povedali. Určite sa vrátim."</p>
+                    <div class="review-author">
+                        <strong>Marek Kováč</strong>
+                        <span>Prešov · Apríl 2024</span>
+                    </div>
+                    <div class="review-service">Diagnostika + oprava</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Prezúvanie pneumatík vybavené rýchlo a bez čakania. Personál milý, profesionálny. Odporúčam všetkým, kto hľadá spoľahlivý pneuservis v Prešove."</p>
+                    <div class="review-author">
+                        <strong>Jana Horváthová</strong>
+                        <span>Prešov · Október 2023</span>
+                    </div>
+                    <div class="review-service">Pneuservis</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Mal som problém s prevodovkou, nikde mi nevedeli povedať čo to je. V TRAKCIA to diagnostikovali presne, vysvetlili mi všetko zrozumiteľne a opravili za rozumnú cenu. Spokojný zákazník!"</p>
+                    <div class="review-author">
+                        <strong>Tomáš Baláž</strong>
+                        <span>Sabinov · Február 2024</span>
+                    </div>
+                    <div class="review-service">Oprava prevodovky</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Príprava na STK prebehla bez problémov. Našli závady, ktoré som ani netušil, opravili ich a auto prešlo STK na prvýkrát. Profesionálny prístup, odporúčam."</p>
+                    <div class="review-author">
+                        <strong>Peter Šimko</strong>
+                        <span>Prešov · Január 2024</span>
+                    </div>
+                    <div class="review-service">Príprava na STK</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Výmena oleja a filtrov vybavená rýchlo, za dobrú cenu. Servis je čistý, personál ochotný. Chodím sem pravidelne už 3 roky a nikdy som nebola sklamaná."</p>
+                    <div class="review-author">
+                        <strong>Lucia Marková</strong>
+                        <span>Prešov · Marec 2024</span>
+                    </div>
+                    <div class="review-service">Výmena oleja</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Skvelý servis, profesionálny prístup. Všetko bolo vysvetlené, cena bola férová. Určite sa vrátim a odporúčam všetkým svojim známym."</p>
+                    <div class="review-author">
+                        <strong>Vladimír Novák</strong>
+                        <span>Prešov · Máj 2024</span>
+                    </div>
+                    <div class="review-service">Kompletný servis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-label">
+                <div class="accent-line"></div>
+                <span>Galéria</span>
+            </div>
+            <h2>Pohľad do našej<br><span class="accent">dielne</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663679410955/kUJBVMAfXMtCaMsHJF5yfr/hero-workshop-N4tnU2m4V98eHyB3x9TZy4.webp" alt="Autoservis dielňa TRAKCIA">
+                    <div class="gallery-caption">Naša dielňa</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663679410955/kUJBVMAfXMtCaMsHJF5yfr/diagnostics-5f5VmoNwaJZc4Tsgk8CADC.webp" alt="Diagnostika vozidiel">
+                    <div class="gallery-caption">Diagnostika</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663679410955/kUJBVMAfXMtCaMsHJF5yfr/tire-service-TK7nPm8qJ3xK2vL9mN4pQ5.webp" alt="Pneuservis">
+                    <div class="gallery-caption">Pneuservis</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663679410955/kUJBVMAfXMtCaMsHJF5yfr/about-team-f8eB6mYzC629TLJumzAWqo.webp" alt="Tím TRAKCIA">
+                    <div class="gallery-caption">Náš tím</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-label">
+                <div class="accent-line"></div>
+                <span>Kontakt</span>
+            </div>
+            <h2>Kontaktujte nás<br><span class="accent">alebo navštívte</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Telefón</h3>
+                            <a href="tel:+421514525207">+421 51 452 5207</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:trakciapresov@gmail.com">trakciapresov@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Adresa</h3>
+                            <p>Jilemnického 1<br>080 01 Prešov<br>Slovensko</p>
+                        </div>
+                    </div>
+                    <div class="opening-hours">
+                        <h3>Otváracie hodiny</h3>
+                        <p>Po - Pia: 08:00 - 17:00</p>
+                        <p>Sobota: 09:00 - 13:00</p>
+                        <p>Nedeľa: Zatvorené</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Vaše meno" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="+421 ..." required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="vas@email.sk" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Vyberte službu...</option>
+                            <option value="diagnostika">Diagnostika vozidiel</option>
+                            <option value="olej">Výmena oleja a filtrov</option>
+                            <option value="brzdy">Brzdy a podvozok</option>
+                            <option value="pneumatiky">Pneuservis</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Popíšte problém alebo požiadavku..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Odoslať správu</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TRAKCIA s.r.o.</h3>
+                    <p>Profesionálny autoservis v Prešove s 15+ rokmi skúseností.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" title="Facebook">f</a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Rýchle odkazy</h3>
+                    <ul>
+                        <li><a href="#hero">Domov</a></li>
+                        <li><a href="#about">O nás</a></li>
+                        <li><a href="#services">Služby</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Služby</h3>
+                    <ul>
+                        <li><a href="#services">Diagnostika vozidiel</a></li>
+                        <li><a href="#services">Výmena oleja a filtrov</a></li>
+                        <li><a href="#services">Brzdy a podvozok</a></li>
+                        <li><a href="#services">Pneuservis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p><a href="tel:+421514525207">+421 51 452 5207</a></p>
+                    <p><a href="mailto:trakciapresov@gmail.com">trakciapresov@gmail.com</a></p>
+                    <p>Jilemnického 1<br>080 01 Prešov</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TRAKCIA s.r.o. Všetky práva vyhradené.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
